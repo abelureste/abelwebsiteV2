@@ -19,7 +19,7 @@
         <a class="navbar-brand" href="projects.html">← return to projects</a>
       </div>
     </nav>
-    <div class="container">
+    <div class="container pb-5">
       <div>
         <h1>Personal Home Lab</h1>
         <h5>I needed to practice my networking skills, so I made my own home lab.</h5>
@@ -47,25 +47,19 @@
         </button>
       </div>
       <h5>Why make a home lab?</h5>
-      <p>Its simple, I wanted to practice what I've been learning in my networking and cybersecurity classes. I figured the best way to become familiar with </p>
+      <p>It's simple, I wanted to practice what I've been learning in my networking and cybersecurity classes. I figured the best way to become familiar with manipulating computers over a network is to make my own network. Over the course of a few months, I did lots of forum searching to research what hardware and software people were using for their personal homelabs. I then took note of what hardware people were using, and being a student, I wanted to do this whole project in an attainable budget.</p>
       <h5>Hardware</h5>
       <p>Components:</p>
       <ul>
-        <li>Raspberry Pi Zero W 2</li>
-        <li>Pimoroni Inky Impression 5.7"</li>
-        <li>3D Printed Case designed by myself</li>
+        <li>Asus RT-AX1800S Router</li>
+        <li>Netgear 5 Port Gigabit Switch</li>
+        <li>2x 4GB Ram Raspberry Pi 5 with NVMe hats and 256gb NVMe drives</li>
+        <li>Dell Optiplex 3070 9100T 8</li>
+        <li>3D Printed Rack with Custom Mounts for Hardware</li>
       </ul>
-      <p>Upon researching hardware to use for this project, I came across these super cool digital e-ink displays made by pimoroni, which are similar to a kindle, but multicolor. These displays are plug and play with any raspberry pi header, making the hardware a breeze to put together. Another cool fact is that they will keep displaying images without power to the computer, a feature that will come in handy later when I make the device wireless. Putting together the hardware is as simple as plugging in the screen to the raspberry pi header, then installing a microSD card into the raspberry pi with raspberry pi OS installed. To display the project, I made a picture frame in CAD with a slot for the screen and raspberry pi combo, then 3D printed the STL.</p>
-      <h5>Software</h5>
-      <p style="margin-bottom: none;">Utilized technologies:</p>
-      <ul>
-        <li>Python</li>
-        <li>Flask</li>
-        <li>HTML & CSS</li>
-      </ul>
-      <p>One of the big goals of this project was to make it extremely user friendly. I intended to make sure my girlfriend would be able to easily access the Raspberry Pi and upload pictures without my help. Therefore, I figured I'd make a web interface so that anyone on my network can add pictures of their own. To make this web interface I used Flask, a python web application framework. Flask would host a webpage written in HTML, and would take user input in the form of pictures. </p>
-    </div>
-    
+      <p>Starting with the router, this is something I already had and while the CPU can be quite slow and the RAM amount is quite low, it works for now and is yet to be a bottleneck. Next, the gigabit switch is a hand-me-down from a friend that no longer needed it. It works and it was free so its a no brainer to implement. Finally, the computers. I decided to start off with two raspberry pis, which work well as low power computers that can run processes or scripts for me 24/7 and not make a big impact on my electric bill. Instead of using the microSD slots, I wanted NVMe drives to for faster, more reliable storage. I installed NVMe boards by mounting them to the Pis with 3D printed custom mounts and standoffs so they didn't interfere with my rack. After tinkering with the pis for a bit, I ordered a used Dell Optiplex 3070 micro off of eBay to be a dedicated Proxmox computer. I created a Proxmox instance because I wanted to learn more about working natively in Linux environments, and work with penetration testing software embedded with Kali Linux. I also have began to work with containerization, which is extremely easy to set up in Proxmox. </p>
+      <h5>What I learned</h5>
+    </div> 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
