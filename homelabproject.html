@@ -25,29 +25,32 @@
         <h5>I needed to practice my networking skills, so I made my own home lab.</h5>
       </div>
       <hr>
-      <div id="carouselExample" class="carousel slide pb-4">
+      <div id="carousel" class="carousel slide pb-4">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="resources/chewycompressed 1-2.jpg" class="d-block w-100" alt="...">
+            <img src="resources/homelabPic1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="resources/chewycompressed 1-2.jpg" class="d-block w-100" alt="...">
+            <img src="resources/homelabPic2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="resources/chewycompressed 1-2.jpg" class="d-block w-100" alt="...">
+            <img src="resources/homelabPic3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="resources/homelabPic4.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
       <h5>Why make a home lab?</h5>
-      <p>It's simple, I wanted to practice what I've been learning in my networking and cybersecurity classes. I figured the best way to become familiar with manipulating computers over a network is to make my own network. Over the course of a few months, I did lots of forum searching to research what hardware and software people were using for their personal homelabs. I then took note of what hardware people were using, and being a student, I wanted to do this whole project in an attainable budget.</p>
+      <p>Simply put, I wanted to put what I’d been learning in my networking and cybersecurity classes into practice. I figured the best way to get hands-on experience with managing and manipulating computers over a network was to build my own. Over the course of a few months, I dove into forums, reading up on the hardware and software people were using in their personal homelabs. I took notes, compared setups, and—with a student budget in mind—set out to build something both practical and affordable.</p>
       <h5>Hardware</h5>
       <p>Components:</p>
       <ul>
@@ -57,8 +60,12 @@
         <li>Dell Optiplex 3070 9100T 8</li>
         <li>3D Printed Rack with Custom Mounts for Hardware</li>
       </ul>
-      <p>Starting with the router, this is something I already had and while the CPU can be quite slow and the RAM amount is quite low, it works for now and is yet to be a bottleneck. Next, the gigabit switch is a hand-me-down from a friend that no longer needed it. It works and it was free so its a no brainer to implement. Finally, the computers. I decided to start off with two raspberry pis, which work well as low power computers that can run processes or scripts for me 24/7 and not make a big impact on my electric bill. Instead of using the microSD slots, I wanted NVMe drives to for faster, more reliable storage. I installed NVMe boards by mounting them to the Pis with 3D printed custom mounts and standoffs so they didn't interfere with my rack. After tinkering with the pis for a bit, I ordered a used Dell Optiplex 3070 micro off of eBay to be a dedicated Proxmox computer. I created a Proxmox instance because I wanted to learn more about working natively in Linux environments, and work with penetration testing software embedded with Kali Linux. I also have began to work with containerization, which is extremely easy to set up in Proxmox. </p>
-      <h5>What I learned</h5>
+      <p>I started with the router—something I already had on hand. While its CPU is a bit slow and the RAM is limited, it hasn’t been a bottleneck yet, so it works for now. The gigabit switch was a hand-me-down from a friend who no longer needed it. It works, and it was free—an easy decision to include it in the setup.
+      <br><br>
+      As for the computers, I began with two Raspberry Pis. They’re perfect as low-power machines that can run processes or scripts 24/7 without making a noticeable impact on my electricity bill. Instead of relying on microSD cards for storage, I opted for NVMe drives to get faster, more reliable performance. I mounted NVMe boards to the Pis using 3D-printed custom brackets and standoffs, making sure they fit cleanly into my rack without interference.
+      <br><br>
+      After getting comfortable with the Pis, I added a used Dell Optiplex 3070 Micro that I picked up on eBay. I set it up as a dedicated Proxmox machine to dive deeper into Linux environments and experiment with penetration testing tools using Kali Linux. More recently, I’ve also started working with containerization—something that Proxmox makes incredibly easy to set up and manage.</p>
+      <!-- <h5>What I learned</h5> -->
     </div> 
 
     <!-- Optional JavaScript -->
