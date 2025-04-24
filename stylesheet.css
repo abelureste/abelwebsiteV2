@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(248, 249, 250);
+}
+
 .container{
   max-width: 1000px;
 }
@@ -6,4 +10,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.item {
+  position: relative;
+}
+
+.item a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
