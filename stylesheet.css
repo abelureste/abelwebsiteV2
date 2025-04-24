@@ -16,6 +16,11 @@ body{
   position: relative;
 }
 
+.item:hover{
+  transition: transform 300ms ease-in-out;
+  transform: scale(1.01);
+}
+
 .item a::before {
   content: "";
   position: absolute;
