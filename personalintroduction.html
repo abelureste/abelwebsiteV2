@@ -10,6 +10,7 @@
 
     <title>Abel Ureste</title>
 
+    <script src="https://kit.fontawesome.com/b536af7e37.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
 
@@ -23,48 +24,90 @@
       <div class="container p-5 shadow rounded" style="background-color: rgb(255, 255, 255);">
         <div>
           <h1>Personal Introduction</h1>
-          <h5>Who am I? Why care about me? Hire me please?</h5>
+          <h5>Learn a little bit about me, professionally and personally</h5>
         </div>
         <hr>
-        <div id="carousel" class="carousel slide pb-4">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="resources/piFramePic1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="resources/piFramePic2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="resources/piFramePic3.jpg" class="d-block w-100" alt="...">
+        <div class="row"> 
+          <div class="col">
+            <div id="carousel" class="carousel slide pb-4">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="resources/personalIntro.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/personalIntro.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/personalIntro.JPG" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="col-8">
+            <h5>Let me introduce myself</h5>
+            <p>Hello! I'm Abel Ureste, a Computer Science and Cybersecurity graduate from the University of North Georgia. I've dedicated much of my time becoming proficient in both creating software, and practicing my networking skills through various personal projects. I love what I do, and strive to learn more about working with technology everyday. <br><br> </p>
+          </div>
         </div>
-        <h5>Why a Picture Frame?</h5>
-        <p>For my first venture into programming hardware with software, I set out to build something I’d been wanting for a long time: a digital picture frame. This project felt like the perfect opportunity to gain hands-on experience—both in coding and assembling physical components. For anyone exploring single-board computers, displaying an image on hardware is a major milestone, and for me, it was a personal goal I was eager to achieve.</p>
-        <h5>Hardware</h5>
-        <p>Components:</p>
-        <ul>
-          <li>Raspberry Pi Zero W 2</li>
-          <li>Pimoroni Inky Impression 5.7"</li>
-          <li>3D Printed Case designed by myself</li>
-        </ul>
-        <p>While researching hardware for the project, I discovered these super cool multicolor e-ink displays made by Pimoroni. Similar to a Kindle but with color, these displays stood out for their simplicity and versatility—they’re plug-and-play with any Raspberry Pi header, which made hardware setup a breeze. One especially unique feature is that they retain the displayed image even when the Pi is powered off—perfect for when I eventually make the device wireless. Assembly was straightforward: I just plugged the screen into the Raspberry Pi, inserted a microSD card loaded with Raspberry Pi OS, and it was ready to go. To house everything, I designed a custom picture frame in CAD with a slot for the screen-and-Pi combo, then 3D printed it from the STL file..</p>
-        <h5>Software</h5>
-        <p style="margin-bottom: none;">Utilized technologies:</p>
-        <ul>
-          <li>Python</li>
-          <li>Flask</li>
-          <li>HTML & CSS</li>
-        </ul>
-        <p>One of the main goals of this project was to make it incredibly user-friendly. I wanted my girlfriend to be able to easily access the Raspberry Pi and upload pictures without needing my help. To make that possible, I decided to build a web interface that anyone on our network could use to add their own photos. I used Flask—a lightweight Python web framework—to host a simple HTML-based webpage that allows users to interact with the device. Through the interface, users can upload or delete images from the rotation and even adjust how frequently the pictures change, all without touching the hardware or code.</p>
+        <div class="row pt-4 pb-5"> 
+          <div class="col text-center">
+            <h5>Languages</h5>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-css"></i> CSS</div>
+            <div class="skill rounded item-sm"><i class="fa-solid fa-database"></i> SQL</div>
+          </div>
+          <div class="col text-center">
+            <h5 class="col">Systems</h5>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-windows"></i> Windows</div>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-linux"></i> Linux</div>
+            <div class="skill rounded item-sm"><i class="fa-solid fa-desktop"></i> Unix</div>
+          </div>
+          <div class="col text-center">
+            <h5 class="col">Technologies</h5>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-git"></i> Git</div>
+            <div class="skill rounded item-sm"><i class="fa-solid fa-flask"></i> Flask</div>
+            <div class="skill rounded item-sm"><i class="fa-brands fa-docker"></i> Docker</div>
+            <div class="skill rounded item-sm"><i class="fa-solid fa-database"></i> MySQL</div>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-8">
+            <h5>Get to know me</h5>
+            <p>Hobbies</p>
+          </div>
+          <div class="col">
+            <div id="carousel2" class="carousel slide pb-4">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="resources/personalIntro.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/personalIntro.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/personalIntro.JPG" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

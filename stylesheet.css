@@ -29,3 +29,29 @@ body{
   bottom: 0px;
   left: 0px;
 }
+
+.item-sm:hover{
+  transition: transform 150ms ease-in-out;
+  transform: scale(1.1);
+}
+
+.item-sm a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.skill {
+  background-color: rgb(33, 37, 41);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
